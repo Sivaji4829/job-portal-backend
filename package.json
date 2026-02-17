@@ -2,11 +2,12 @@
   "name": "job-portal-backend",
   "version": "1.0.0",
   "description": "TypeScript Node/Express Backend for Employer Job Portal",
-  "main": "src/server.ts",
+  "main": "dist/server.js",
   "scripts": {
     "start": "node dist/server.js",
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "tsc"
+    "dev": "ts-node-dev --respawn --transpile-only server.ts",
+    "build": "rm -rf dist && tsc",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "cors": "^2.8.5",
