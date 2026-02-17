@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "build": "rm -rf dist && tsc",
+    "build": "tsc",
     "postinstall": "npm run build"
   },
   "dependencies": {
