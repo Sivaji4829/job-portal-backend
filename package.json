@@ -4,11 +4,10 @@
   "description": "TypeScript Node/Express Backend for Employer Job Portal",
   "main": "dist/server.js",
   "scripts": {
-    "start": "node dist/server.js",
-    "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "build": "tsc",
-    "postinstall": "npm run build"
-  },
+  "start": "node dist/server.js",
+  "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+  "build": "tsc"
+},
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
